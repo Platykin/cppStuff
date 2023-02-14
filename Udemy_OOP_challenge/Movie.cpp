@@ -8,12 +8,13 @@ Movie::Movie(std::string val_name, std::string val_rating, int val_times_wathed)
 }
 
 Movie::Movie(const Movie &source)
-    : Movie(source.name, source.rating, source.times_watched){    
+    : name(source.name), rating(source.rating), times_watched(source.times_watched)
+{
 }
 
 Movie::~Movie(){
 }
 
 void Movie::display() const {
-    std::cout << name << rating << times_watched << std::endl;
+    std::cout << "Name: " <<  name << " Rating: " << rating << "Times wathced" << times_watched << std::endl;
 }

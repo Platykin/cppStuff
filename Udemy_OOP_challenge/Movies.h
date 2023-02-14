@@ -8,12 +8,13 @@
 
 class Movies{
 private:
-    std::vector<Movie> movies;
+    friend class Movie;
+    std::vector <Movie> movies;
 public: 
-    Movies(); //constructor
+    Movies(std::vector <Movie> val_movies); //constructor
     ~Movies(); //destructor
 
-    bool add_movie(std::string name, std::string rating, int watched){};
+
 
 
 
