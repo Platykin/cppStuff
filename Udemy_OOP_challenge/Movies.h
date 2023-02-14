@@ -8,15 +8,17 @@
 
 class Movies{
 private:
-    std::vector <Movie> Movies{};
+    std::vector<Movie> movies;
 public: 
     Movies(); //constructor
     ~Movies(); //destructor
 
+    bool add_movie(std::string name, std::string rating, int watched){};
 
 
 
-}
+
+};
 
 
 #endif

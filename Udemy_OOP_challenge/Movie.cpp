@@ -13,3 +13,7 @@ Movie::Movie(const Movie &source)
 
 Movie::~Movie(){
 }
+
+void Movie::display() const {
+    std::cout << name << rating << times_watched << std::endl;
+}
