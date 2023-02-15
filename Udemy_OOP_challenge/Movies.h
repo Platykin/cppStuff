@@ -13,7 +13,7 @@ public:
     Movies(); //constructor
     ~Movies(); //destructor
 
-    bool add_movie(std::string val_name, std::string val_rating, int val_timws_watched);
+    bool add_movie(std::string val_name, std::string val_rating, int val_times_watched);
 
     bool increment_watched(std::string val_name);
 

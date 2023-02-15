@@ -8,7 +8,7 @@ Movie::Movie(std::string val_name, std::string val_rating, int val_times_wathed)
 }
 
 Movie::Movie(const Movie &source)
-    : name(source.name), rating(source.rating), times_watched(source.times_watched)
+    : Movie{source.name, source.rating, source.times_watched}
 {
 }
 
